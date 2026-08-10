@@ -1,11 +1,8 @@
 
-Merging object attributes
-
-
 Discarded input sections
 
- .group         0x00000000        0xc /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
- .group         0x00000000        0xc /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
+ .group         0x00000000        0xc /tmp/ccAF6xIB.o
+ .group         0x00000000        0xc /tmp/ccAF6xIB.o
 
 Memory Configuration
 
@@ -16,17 +13,17 @@ RAM              0x20000000         0x00005000         xrw
 
 Linker script and memory map
 
-LOAD /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
-LOAD /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+LOAD /tmp/ccAF6xIB.o
+LOAD /tmp/ccNdbl0o.o
                 0x20005000                        _stack_top = (ORIGIN (RAM) + LENGTH (RAM))
 
 .text           0x08000000      0x14c
  *(.isr_vector)
- .isr_vector    0x08000000       0x40 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+ .isr_vector    0x08000000       0x40 /tmp/ccNdbl0o.o
  *(.text*)
- .text          0x08000040       0xc8 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
+ .text          0x08000040       0xc8 /tmp/ccAF6xIB.o
                 0x08000040                main
- .text          0x08000108       0x44 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+ .text          0x08000108       0x44 /tmp/ccNdbl0o.o
                 0x08000108                Reset_Handler
                 0x08000134                Default_Handler
  *(.rodata*)
@@ -44,76 +41,75 @@ LOAD /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
  .v4_bx         0x0800014c        0x0 linker stubs
 
 .iplt           0x0800014c        0x0
- .iplt          0x0800014c        0x0 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+ .iplt          0x0800014c        0x0 /tmp/ccNdbl0o.o
 
 .rel.dyn        0x0800014c        0x0
- .rel.iplt      0x0800014c        0x0 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+ .rel.iplt      0x0800014c        0x0 /tmp/ccNdbl0o.o
 
 .data           0x20000000        0x0 load address 0x0800014c
                 0x20000000                        _sdata = .
  *(.data*)
- .data          0x20000000        0x0 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
- .data          0x20000000        0x0 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+ .data          0x20000000        0x0 /tmp/ccAF6xIB.o
+ .data          0x20000000        0x0 /tmp/ccNdbl0o.o
                 0x20000000                        _edata = .
                 0x0800014c                        _sidata = LOADADDR (.data)
 
 .igot.plt       0x20000000        0x0 load address 0x0800014c
- .igot.plt      0x20000000        0x0 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+ .igot.plt      0x20000000        0x0 /tmp/ccNdbl0o.o
 
 .bss            0x20000000        0x0 load address 0x0800014c
                 0x20000000                        _sbss = .
  *(.bss*)
- .bss           0x20000000        0x0 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
- .bss           0x20000000        0x0 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+ .bss           0x20000000        0x0 /tmp/ccAF6xIB.o
+ .bss           0x20000000        0x0 /tmp/ccNdbl0o.o
  *(COMMON)
                 0x20000000                        _ebss = .
 OUTPUT(blinky.elf elf32-littlearm)
 LOAD linker stubs
 
 .debug_info     0x00000000       0xe4
- .debug_info    0x00000000       0xb3 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
- .debug_info    0x000000b3       0x31 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+ .debug_info    0x00000000       0xb3 /tmp/ccAF6xIB.o
+ .debug_info    0x000000b3       0x31 /tmp/ccNdbl0o.o
 
 .debug_abbrev   0x00000000       0x97
- .debug_abbrev  0x00000000       0x6f /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
- .debug_abbrev  0x0000006f       0x28 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+ .debug_abbrev  0x00000000       0x6f /tmp/ccAF6xIB.o
+ .debug_abbrev  0x0000006f       0x28 /tmp/ccNdbl0o.o
 
 .debug_aranges  0x00000000       0x40
  .debug_aranges
-                0x00000000       0x20 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
+                0x00000000       0x20 /tmp/ccAF6xIB.o
  .debug_aranges
-                0x00000020       0x20 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+                0x00000020       0x20 /tmp/ccNdbl0o.o
 
-.debug_macro    0x00000000      0xe98
- .debug_macro   0x00000000       0x72 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
- .debug_macro   0x00000072      0xad8 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
- .debug_macro   0x00000b4a      0x34e /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
+.debug_macro    0x00000000      0xe76
+ .debug_macro   0x00000000       0x68 /tmp/ccAF6xIB.o
+ .debug_macro   0x00000068      0xac0 /tmp/ccAF6xIB.o
+ .debug_macro   0x00000b28      0x34e /tmp/ccAF6xIB.o
 
-.debug_line     0x00000000      0x176
- .debug_line    0x00000000      0x113 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
- .debug_line    0x00000113       0x63 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+.debug_line     0x00000000      0x133
+ .debug_line    0x00000000       0xd0 /tmp/ccAF6xIB.o
+ .debug_line    0x000000d0       0x63 /tmp/ccNdbl0o.o
 
-.debug_str      0x00000000     0x3a25
- .debug_str     0x00000000     0x3a25 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
-                               0x3b60 (size before relaxing)
- .debug_str     0x00003a25        0x0 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
-                                 0x89 (size before relaxing)
+.debug_str      0x00000000     0x39aa
+ .debug_str     0x00000000     0x39aa /tmp/ccAF6xIB.o
+                               0x3ae5 (size before relaxing)
+ .debug_str     0x000039aa       0x73 /tmp/ccNdbl0o.o
 
-.comment        0x00000000       0x12
- .comment       0x00000000       0x12 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
-                                 0x13 (size before relaxing)
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 /tmp/ccAF6xIB.o
+                                 0x27 (size before relaxing)
 
 .ARM.attributes
                 0x00000000       0x2b
  .ARM.attributes
-                0x00000000       0x2d /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
+                0x00000000       0x2d /tmp/ccAF6xIB.o
  .ARM.attributes
-                0x0000002d       0x21 /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+                0x0000002d       0x21 /tmp/ccNdbl0o.o
 
 .debug_frame    0x00000000       0x6c
- .debug_frame   0x00000000       0x6c /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccn1yzYr.o
+ .debug_frame   0x00000000       0x6c /tmp/ccAF6xIB.o
 
 .debug_line_str
-                0x00000000       0x6f
+                0x00000000       0x59
  .debug_line_str
-                0x00000000       0x6f /var/folders/cv/r0pnbn655tscv14km9z_mc8h0000gn/T//ccmkS9cI.o
+                0x00000000       0x59 /tmp/ccNdbl0o.o
